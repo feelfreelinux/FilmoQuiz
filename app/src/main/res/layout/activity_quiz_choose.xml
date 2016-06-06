@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.quiz.mule.filmoquiz.QuizChoose">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true" />
+
+    <com.quiz.mule.filmoquiz.ButtonSquare
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leonardo DiCaprio"
+        android:id="@+id/A"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/view"
+        />
+
+    <com.quiz.mule.filmoquiz.ButtonSquare
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quentin Tarantino"
+        android:id="@+id/B"
+        android:layout_toRightOf="@id/view"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.quiz.mule.filmoquiz.ButtonSquare
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W roku 2012"
+        android:id="@+id/C"
+        android:layout_above="@id/A"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/view"
+        />
+    <com.quiz.mule.filmoquiz.ButtonSquare
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W pustyni i w puszczy"
+        android:id="@+id/D"
+        android:layout_toRightOf="@id/view"
+        android:layout_above="@id/B"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/czas"
+        android:layout_above="@+id/C"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="W którym roku jasfha ksfk dhfba kcva dmgnajf dgjabvafs?"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/D"
+        android:layout_alignEnd="@+id/D"
+        android:layout_above="@+id/czas" />
+</RelativeLayout>
